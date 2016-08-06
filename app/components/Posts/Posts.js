@@ -1,0 +1,21 @@
+import React from 'react'
+
+const Posts = ({posts}) => {
+    return (
+      <div>
+          {posts.map((data,index) => {
+              return (
+                  //The Key here should be a id from our database
+                  <div className="list-group-item" key={index}>
+                     <h1>{data.name}</h1>
+                      <p>{data.post}</p>
+                      <p>{data.likeCount}</p>
+
+                  </div>
+              )
+          })}
+      </div>
+    )
+};
+
+export default Posts

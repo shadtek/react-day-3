@@ -1,0 +1,11 @@
+.item {
+    height:40vh;
+    width:33vw;
+    background: #ccc;
+    float: left;
+}
+
+
+.navbar {
+    margin-bottom: 10vh;
+}
